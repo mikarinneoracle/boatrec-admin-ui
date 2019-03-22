@@ -1,0 +1,25 @@
+{
+  "name": "metering",
+  "version": "0.0.1",
+  "description": "Boat recording admin",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "config": {
+    "port": "3000"
+  },
+  "author": "Mika Rinne, 2019",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "request": "^2.79.0",
+    "bootstrap": "3.3.1",
+    "jquery": "2.1.3",
+    "angular": "1.3.8",
+    "angular-route": "1.3.8"
+  },
+  "devDependencies": {}
+}
