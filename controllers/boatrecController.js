@@ -3,12 +3,14 @@ app.controller('boatrecController', function($location, $http, $rootScope, $scop
 	if($location.path() == '/')
 	{
 		var data = [];
-        var row = {};
         $http.get('/data').success(function(response, err) {
-            row.data = response['data'];
-            data.push(row);
-            $scope.boatrecData = data; 
-            console.log(data);
+            for(var i = 0; i < response['data'].length; i++) {
+                console.log(i + " " + response['data'][i]);
+                var row = {};
+                row.sensorData = response['data'][i];
+                data.push(row);
+            }
+            $scope.boatrecData = data;
         });
 	}
     
